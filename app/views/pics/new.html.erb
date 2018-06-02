@@ -1,0 +1,10 @@
+<h2>Upload image</h2>
+
+<%= simple_form_for @pic do |f| %>
+    <%= f.input :image, as: :file%>
+    <%= f.button :submit%>
+
+    <%= simple_form_for :twibbon do |t| %>
+        <%= t.input :twib_image, as: :file%>
+    <% end %>
+<% end %>
